@@ -175,6 +175,9 @@
     font: normal normal 900 clamp(18px, 1.04vw, 24px) Mattone;
     color: var(--color-white);
   }
+  .why__step {
+    margin: 1em 0;
+  }
 
   @keyframes parallax {
     0% {

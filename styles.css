@@ -454,11 +454,11 @@ nav,
   position: absolute;
   left: 10%;
   content: " ";
-  background-image: url("./assets/56e741a0_efda_4bf1_91a6_4e44dd44dd8d_undefined_undefined_undefined2.png");
+  background-image: url("./assets/56e741a0.png");
   filter: blur(5px);
   background-size: cover;
   height: clamp(240px, 18.07vw, 420px);
-  max-width: clamp(240px, 18.07vw, 420px);
+  width: clamp(240px, 18.07vw, 420px);
   z-index: -1;
 }
 .experts .expert:last-of-type::before {
@@ -599,14 +599,23 @@ dl {
 .footer {
   background: var(--color-blue-300);
   color: var(--color-white);
-  padding: 1.5rem;
+  padding: 3rem;
   display: flex;
+  gap: 10em;
   justify-content: center;
 }
-.footer > * {
-  flex: 1;
+.footer p {
+  margin: 0;
+  font-weight: 300;
+}
+.footer > .social {
   display: flex;
+  flex-direction: column;
+  gap: 1em;
   justify-content: center;
+  font: normal normal bold 20px/26px Avenir Next;
+  text-decoration: underline;
+  cursor: pointer;
 }
 
 @keyframes parallax {
