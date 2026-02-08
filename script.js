@@ -1,7 +1,7 @@
 const links = document.querySelectorAll(".nav__item");
 const nav = document.querySelector("nav");
 const navL = document.querySelector(".nav__list");
-const icons = document.querySelector("#icons");
+const icons = document.querySelector(".burger");
 
 icons.addEventListener("click", () => {
   nav.classList.toggle("active");

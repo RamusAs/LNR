@@ -179,25 +179,20 @@ nav,
   height: clamp(90px, 4.32vw, 100px);
 }
 .scroll-down {
-  position: absolute;
-  bottom: 15%;
-  left: 50%;
-  transform: translateX(-50%);
-  margin: auto;
   width: 64px;
   height: 64px;
   background: var(--color-white);
   border-radius: 999px;
   color: var(--color-red);
-  grid-area: 2 / 1 / 3 / 3;
   display: flex;
   align-items: center;
   justify-content: center;
-  z-index: 2;
+  grid-area: 2 / 7 / 3 / 8;
+  transform: translateY(-110%);
 }
 
 /* Hero */
-.hero {
+.hero__grid {
   background: url("./assets/gazon-HP.png") center / cover no-repeat;
   margin: 2% 4%;
   height: 95vh;
@@ -206,7 +201,7 @@ nav,
   position: relative;
 }
 
-.hero::before {
+.hero__grid::before {
   position: absolute;
   content: "";
   height: 100%;
@@ -223,9 +218,15 @@ nav,
 
 .hero__grid {
   display: grid;
-  grid-template-columns: 7fr 5fr;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(2, 1fr);
   gap: 2rem;
   position: relative;
+}
+.hero__content {
+  grid-area: 1 / 1 / 2 / 8;
+}
+.hero__grid > * {
   z-index: 1;
 }
 .hero__title {
@@ -238,8 +239,10 @@ nav,
 .hero__highlight {
   background: var(--color-blue-300);
   color: var(--color-white);
-  padding: 0 2rem 1rem;
+  padding: 2rem 1rem 0;
   border-radius: var(--radius-base);
+  height: fit-content;
+  grid-area: 1 / 8 / 2 / 13;
 }
 .hero__highlight-title {
   font: normal normal 900 clamp(24px, 1.77vw, 41px) / 41px Avenir Next;
@@ -332,7 +335,7 @@ nav,
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 100%;
+  max-width: 100%;
   aspect-ratio: 16/9;
   background: var(--color-blue-500);
   color: var(--color-blue-100);
@@ -353,7 +356,7 @@ nav,
   border-radius: 99px;
   top: 10px;
   left: 10px;
-  width: clamp(56px, 4.17vw, 96px);
+  max-width: clamp(56px, 4.17vw, 96px);
   height: clamp(23px, 1.72vw, 40px);
   color: var(--color-white);
   background-color: var(--color-blue-100);
@@ -366,18 +369,18 @@ nav,
   margin-top: 4em;
 }
 .why__video video {
-  width: 100%;
+  max-width: 100%;
   border-radius: var(--radius-base);
 }
 .why__video div {
-  width: 100%;
+  max-width: 100%;
   padding: 21px;
   background: var(--color-blue-300);
   border-radius: 15px;
 }
 .why__content p {
   position: relative;
-  z-index: 10;
+  z-index: 0;
 }
 .why__content p::before,
 .why__content p::after {
@@ -385,7 +388,7 @@ nav,
   display: flex;
   content: '"';
   font: italic normal 900 200px / 82px Avenir Next;
-  width: 100%;
+  max-width: 100%;
   height: fit-content;
   color: var(--color-white);
   z-index: -1;
@@ -416,7 +419,7 @@ nav,
   padding: 0;
 }
 .white-ball img {
-  width: 100%;
+  max-width: 100%;
 }
 
 .measures {
@@ -455,7 +458,7 @@ nav,
   filter: blur(5px);
   background-size: cover;
   height: clamp(240px, 18.07vw, 420px);
-  width: clamp(240px, 18.07vw, 420px);
+  max-width: clamp(240px, 18.07vw, 420px);
   z-index: -1;
 }
 .experts .expert:last-of-type::before {
@@ -477,7 +480,7 @@ nav,
   margin: 0;
   margin-right: -2%;
   z-index: 1;
-  width: 40%;
+  max-width: 40%;
   background-color: var(--color-blue-500);
   color: var(--color-white);
   border-radius: var(--radius-base);
@@ -489,7 +492,7 @@ nav,
   display: flex;
   content: '"';
   font: italic normal 900 200px / 82px Avenir Next;
-  width: 100%;
+  max-width: 100%;
   height: 30px;
   color: var(--color-white);
   z-index: -1;
