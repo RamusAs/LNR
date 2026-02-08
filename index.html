@@ -1,11 +1,446 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>LNR – Santé mentale</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="mobile.css" />
+  </head>
+
+  <body class="layout">
+    <!-- HEADER -->
+    <header class="header layout__header">
+      <nav class="nav" aria-label="Navigation principale">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="#why" class="nav__link">Pourquoi agir ?</a>
+          </li>
+          <li class="nav__item">
+            <a href="#plan" class="nav__link">Notre plan santé mentale</a>
+          </li>
+
+          <li class="nav__item nav__item--logo desktop">
+            <a href="#" class="nav__logo" aria-label="Accueil LNR">
+              <img
+                src="./assets/LNR_LOGO_VERSION_HORIZONTALE_EXE_RVB.png"
+                alt="Ligue Nationale de Rugby"
+              />
+            </a>
+          </li>
+
+          <li class="nav__item">
+            <a href="#experts" class="nav__link">Paroles d’experts</a>
+          </li>
+          <li class="nav__item">
+            <a href="#series" class="nav__link">Web-série Têtes hautes</a>
+          </li>
+          <li class="nav__item nav__item--logo mobile">
+            <a href="#" class="nav__logo" aria-label="Accueil LNR">
+              <img
+                src="./assets/LNR_LOGO_VERSION_HORIZONTALE_EXE_RVB.png"
+                alt="Ligue Nationale de Rugby"
+              />
+            </a>
+          </li>
+        </ul>
+        <div id="icons" class="mobile">
+          <a href="#" class="nav__logo" aria-label="Accueil LNR">
+            <img
+              src="./assets/LNR_LOGO_VERSION_HORIZONTALE_EXE_RVB.png"
+              alt="Ligue Nationale de Rugby"
+            />
+          </a>
+          <img class="open" src="./assets/Menu-ouvert.png" alt="" />
+          <img class="close" src="./assets/Menu-ferme.png" alt="" />
+        </div>
+      </nav>
+    </header>
+
+    <!-- MAIN -->
+    <main class="main layout__main">
+      <!-- HERO -->
+      <section class="hero">
+        <div class="hero__grid">
+          <div class="hero__content">
+            <h1 class="hero__title">
+              La Ligue Nationale de Rugby ouvre la voie à un plan santé mentale
+              pionnier dans le sport professionnel.
+            </h1>
+          </div>
+
+          <aside class="hero__highlight">
+            <h2 class="hero__highlight-title">
+              La santé mentale concerne tous les professionnels du sport.
+            </h2>
+            <p class="hero__highlight-text">
+              Lewis Hamilton, Michael Phelps, Simone Biles, et autres sportifs
+              de haut niveau ont évoqué leurs problèmes de santé mentale et la
+              difficulté à en parler. <br /><br />
+              Le rugby n’est pas épargné, loin de là. Dépression, addiction,
+              blessures… les conséquences humaines sont douloureuses et les
+              performances sportives suivent. Personne n’est gagnant à se
+              taire.<br /><br />
+              L’ambition de la LNR est d’être une lige sportive pionnière qui
+              fait du bien-être mental une condition indispensable à la
+              performance et à l’épanouissement des joueurs et entraîneurs.
+            </p>
+            <footer>
+              <p class="hero__highlight-footer">
+                La LNR avait annoncé le plan en 2023, voici aujourd’hui un point
+                sur son déploiement.
+              </p>
+            </footer>
+          </aside>
+        </div>
+        <a href="#why" class="scroll-down desktop"
+          ><svg
+            stroke="currentColor"
+            fill="currentColor"
+            stroke-width="0"
+            viewBox="0 0 384 512"
+            height="2em"
+            width="2em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M169.4 470.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 370.8 224 64c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 306.7L54.6 265.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"
+            ></path>
+          </svg>
+        </a>
+      </section>
+
+      <!-- POURQUOI AGIR -->
+      <section id="why" class="section section--beige">
+        <div class="why__section-left">
+          <header class="section__header">
+            <h2 class="section__title">POURQUOI AGIR ?</h2>
+            <p class="section__subtitle subtitle">
+              Longtemps reléguée au second plan, la santé mentale s’impose
+              aujourd’hui comme un enjeu central dans le sport professionnel.
+            </p>
+          </header>
+
+          <img
+            class="yann-roubert"
+            src="./assets/YannRoubert-BackRouge.png"
+            alt="YANN ROUBERT"
+          />
+          <article class="why__content">
+            <figure class="why__quote">
+              <figcaption>
+                <strong>Yann Roubert</strong><br />
+                Président de la Ligue Nationale de Rugby
+              </figcaption>
+            </figure>
+
+            <p>
+              Le rugby est un sport d’engagement, de dépassement de soi, mais il
+              ne doit jamais se jouer au détriment de la santé de celles et ceux
+              qui le font vivre.<br />
+              <br />
+              À la LNR, nous avons la responsabilité de protéger nos joueurs et
+              nos entraîneurs, non seulement physiquement, mais aussi
+              mentalement. Nous n’avons pas attendu que la santé mentale
+              devienne la grande cause nationale pour agir. <br />
+              <br />
+              Issu de notre stratégie 2023–2027, le plan “Santé mentale” est le
+              fruit de plusieurs mois de travail, co-construit avec la
+              Commission médicale, la FFR, Provale, Tech XV, l’UCPR et des
+              expertes reconnues. Cet effort collectif se concrétise par un
+              investissement majeur de la LNR d’1 million d’euros sur 5 ans pour
+              sa mise en œuvre.<br />
+              <br />
+              Notre approche s’articule autour de trois piliers –
+              <strong
+                >prévention, détection précoce et prise en charge
+                personnalisée</strong
+              >
+              – pour qu’aucun joueur ni entraîneur ne soit jamais seul face à
+              ses difficultés. Notre ambition est claire : offrir un cadre
+              protecteur et des ressources concrètes pour accompagner chacun, à
+              chaque étape de son parcours. Il s’inscrit dans une vision globale
+              de la santé du joueur tout au long de son parcours professionnel.
+            </p>
+          </article>
+        </div>
+
+        <div class="why">
+          <aside class="why__media">
+            <span class="why__step rotate-left">1/5</span>
+            <p>
+              Une étude menée par la Fondation FondaMental, en partenariat avec
+              le ministère des Sports et l’INSEP, révèle que près d’un jeune
+              sportif de haut niveau sur cinq exprime un mal-être psychologique.
+              Ces chiffres alarmants soulignent la nécessité d’une prise en
+              charge adaptée.
+            </p>
+          </aside>
+          <aside class="why__video">
+            <div>
+              <video height="100%" controls>
+                <source
+                  src="./assets/V3 - LNR x Loopsider.mp4"
+                  type="video/mp4"
+                />
+              </video>
+            </div>
+            <p class="why__caption">
+              Découvrez une conversation inédite sur la santé mentale dans le
+              sport de haut niveau, disponible sur Loopsider.
+            </p>
+          </aside>
+        </div>
+      </section>
+
+      <!-- PLAN SANTÉ MENTALE -->
+      <section id="plan" class="section section--blue">
+        <div class="white-ball">
+          <img src="./assets/Ellipse.png" alt="" />
+        </div>
+        <header class="section__header section__header--center">
+          <h2 class="section__title section__title--white">
+            NOTRE PLAN SANTÉ MENTALE
+          </h2>
+        </header>
+
+        <div class="measures">
+          <h3 class="measures__title">LES SIX MESURES CONCRÈTES</h3>
+
+          <ul class="measures__list">
+            <li class="measure">
+              <img
+                class="measures__icon"
+                src="./assets/01-icone-telephone.png"
+                alt="icone-telephone"
+              />
+              <h4 class="measure__title">Ligne téléphonique dédiée</h4>
+              <p class="measures__description">
+                Une ligne d’écoute confidentielle à destination des staffs
+                médicaux que nous avons décidé d’ouvrir aussi aux joueurs.
+              </p>
+            </li>
+            <li class="measure">
+              <img
+                class="measures__icon"
+                src="./assets/02-icone-bilan.png"
+                alt="icone-bilan"
+              />
+              <h4 class="measure__title">
+                Bilans psychologiques de pré-saison
+              </h4>
+              <p class="measures__description">
+                Uniformiser les pratiques des clubs sur les bilans
+                psychologiques.
+              </p>
+            </li>
+            <li class="measure">
+              <img
+                class="measures__icon"
+                src="./assets/03-icone-atelier.png"
+                alt="icone-atelier"
+              />
+              <h4 class="measure__title">
+                Ateliers de prévention dans les clubs
+              </h4>
+              <p class="measures__description">
+                Sensibiliser, dialoguer, déstigmatiser.
+              </p>
+            </li>
+            <li class="measure">
+              <img
+                class="measures__icon"
+                src="./assets/04-icone-module.png"
+                alt="icone-module"
+              />
+              <h4 class="measure__title">
+                Modules de formation de l’encadrement
+              </h4>
+              <p class="measures__description">
+                Former les staffs médicaux et administratifs à la détection des
+                risques psycho-sociaux et aux gestes de 1ère urgence en matière
+                de santé mentale.
+              </p>
+            </li>
+            <li class="measure">
+              <img
+                class="measures__icon"
+                src="./assets/05-icone-barometre.png"
+                alt="icone-barometre"
+              />
+              <h4 class="measure__title">Baromètre de la santé mentale</h4>
+              <p class="measures__description">
+                Créer une banque de données anonymisées de la santé mentale dans
+                le rugby
+              </p>
+            </li>
+            <li class="measure">
+              <img
+                class="measures__icon"
+                src="./assets/06-icone-reseau.png"
+                alt="icone-reseau"
+              />
+              <h4 class="measure__title">Réseau territorial</h4>
+              <p class="measures__description">
+                Mise en place d’un réseau de spécialiste pour permettre une
+                prise en charge rapide
+              </p>
+            </li>
+          </ul>
+        </div>
+        <a href="plansante.html" class="button button--primary">
+          En savoir plus sur chacune des mesures
+        </a>
+      </section>
+
+      <!-- PAROLES D’EXPERTS -->
+      <section id="experts" class="section">
+        <header class="section__header">
+          <h2 class="section__title">PAROLES D’EXPERTS</h2>
+          <p class="section__subtitle subtitle">La parole aux professionnels</p>
+        </header>
+
+        <div class="experts">
+          <article class="expert">
+            <blockquote class="expert__text">
+              La première addiction ? C’est le sport de haut niveau lui-même.
+              Nos joueurs le savent, ils le vivent. Cette rage de jouer, elle
+              est souvent la plus forte, la plus dévorante. Mais les effets sont
+              un piège dévastateur : souffrance silencieuse, dépendances
+              annexes, une performance qui vacille et s’écroule. Il faut agir.
+              MAINTENANT. Décrypter les signaux, briser le silence, tendre la
+              main pour accepter l’aide. Notre promesse est ferme : aucun joueur
+              ne doit rester seul face à ses combats. Forts d’une collaboration
+              inédite entre professionnels de santé, joueurs et médecins de
+              clubs, nous avons tissé un filet de sécurité sans précédent. Le
+              rugby montre la voie, il trace la route pour faire bouger les
+              lignes.
+            </blockquote>
+            <aside class="expert__card rotate-right">
+              <img src="./assets/bernard.png" alt="DR BERNARD DUSFOUR" />
+              <dl class="expert__author">
+                <dt class="expert__author-name">DR BERNARD DUSFOUR</dt>
+                <dd class="expert__author-role">
+                  <strong>Président de la commission médicale de la LNR</strong>
+                </dd>
+              </dl>
+            </aside>
+          </article>
+
+          <article class="expert">
+            <aside class="expert__card rotate-left">
+              <img src="./assets/Lise.png" alt="LISE ANHOURY SZIGETI" />
+              <dl class="expert__author">
+                <dt class="expert__author-name--blue">LISE ANHOURY SZIGETI</dt>
+                <dd class="expert__author-role">
+                  <strong>Psychologue pour le Stade Rochelais</strong>
+                </dd>
+              </dl>
+            </aside>
+            <blockquote class="expert__text expert__text--red">
+              Pendant longtemps, la santé mentale est restée une zone d’ombre
+              dans le sport de haut niveau. Le rugby n’y échappait pas.
+              Aujourd’hui, les lignes bougent. Parler, consulter, se livrer
+              n’est plus un signe de faiblesse, mais un levier de performance.
+              Plus un joueur se connaît, plus il se libère. Les dispositifs
+              déployés par la LNR – bilans psychologiques, ateliers de
+              sensibilisation – ont permis d’amorcer un changement de culture.
+              Ils offrent un premier espace d’écoute, souvent décisif, qui
+              permet aux joueurs de venir consulter sans attendre que la
+              souffrance prenne toute la place. C’est un premier pas, mais un
+              pas essentiel. lignes.
+            </blockquote>
+          </article>
+        </div>
+      </section>
+
+      <!-- WEB SÉRIE -->
+      <section id="series" class="section section--dark">
+        <header class="section__header series__header">
+          <div>
+            <h2 class="section__title section__title--white">
+              Web-série Têtes hautes
+            </h2>
+            <p class="section__subtitle">
+              Découvrez la mini-série « Têtes hautes » qui met en images et en
+              mots le plan santé mentale déployé par la LNR.<br />
+              <br />
+              Merci à tous ceux qui contribuent à libérer la parole.
+            </p>
+          </div>
+          <aside>
+            <img
+              src="./assets/bloc sante mentale.png"
+              alt="bloc sante mentale"
+            /><img
+              class="img-tete"
+              src="./assets/Test 2.4.png"
+              alt="Tête d'un joueur"
+            />
+          </aside>
+        </header>
+
+        <div class="series">
+          <article class="episode">
+            <video controls poster="episode1.jpg"></video>
+            <h3 class="episode__title">Épisode 01</h3>
+            <p class="episode__subtitle">Libérer la parole.</p>
+          </article>
+
+          <article class="episode">
+            <video controls poster="episode2.jpg"></video>
+            <h3 class="episode__title">Épisode 02</h3>
+            <p class="episode__subtitle">
+              La santé mentale, les coulisses du programme.
+            </p>
+          </article>
+
+          <article class="episode">
+            <video controls poster="episode3.jpg"></video>
+            <h3 class="episode__title">Épisode 03</h3>
+            <p class="episode__subtitle">
+              La santé mentale, les coulisses du programme.
+            </p>
+          </article>
+
+          <article class="episode">
+            <video controls poster="episode4.jpg"></video>
+            <h3 class="episode__title">Épisode 04</h3>
+            <p class="episode__subtitle">
+              Un programme qui change des carrières, mais surtout des vies.
+            </p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer layout__footer">
+      <div>
+        <span
+          ><strong>Contacts presse</strong> <br />
+          <br />
+          <strong>Thibault Rossignol</strong> <br />
+          thibault.rossignol@lnr.fr</span
+        >
+      </div>
+      <div></div>
+      <p class="footer__text">
+        La Ligue Nationale de Rugby assure être en conformité avec les
+        obligations liées à la règlementation applicable en matière de
+        protection des données à caractère personnel. <br />
+        En qualité de responsable de traitement au sens du Règlement Général sur
+        la Protection des Données du 14 avril 2016, autrement appelé « RGPD »,
+        et à la Loi informatique et Liberté rectifiée notamment par la loi
+        n°2018-493, dite « LIL 3 », du 20 juin 2018 et son décret d’application,
+        ainsi que l’ordonnance de réécriture n°2018-1225 du 12 décembre 2018, la
+        LNR est susceptible de collecter des données nominatives (noms, prénoms,
+        coordonnées…) ou non nominatives (préférences, informations favorites…)
+        lors des visites de l’Utilisateur sur les Sites afin d’être en mesure de
+        l’identifier et de lui proposer des services personnalisés ou encore
+        afin d’améliorer les Sites et l’expérience Utilisateur.
+      </p>
+    </footer>
+  </body>
 </html>
+<script src="script.js"></script>

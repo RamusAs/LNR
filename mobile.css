@@ -1,0 +1,99 @@
+.mobile {
+  display: none;
+}
+.desktop {
+  display: flex;
+}
+
+@media (max-width: 768px) {
+  /* Désactivation du scroll quand le menu est ouvert */
+  body:has(.active) {
+    overflow: hidden;
+  }
+  .desktop {
+    display: none;
+  }
+  .mobile {
+    display: block;
+  }
+  .header {
+    height: 120px;
+  }
+  #icons {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5%;
+    height: 100%;
+    z-index: 12;
+  }
+  #icons img {
+    height: 40px;
+  }
+  .nav__logo {
+    height: fit-content;
+  }
+  .close,
+  .active .open {
+    display: none;
+  }
+  .active .close {
+    display: block;
+  }
+
+  .nav__list {
+    display: none;
+    position: fixed;
+    right: -100%;
+    top: 0;
+    gap: 5em;
+    flex-direction: column;
+    background: var(--color-beige-300);
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    transition: 0.25s;
+    justify-content: center;
+    z-index: 10;
+    overflow: hidden;
+  }
+  nav.active .nav__list {
+    display: flex;
+  }
+  .nav__link {
+    font-size: 24px;
+  }
+
+  nav li {
+    padding: 3px 0;
+  }
+  nav li:hover {
+    background: var(--color-beige-300);
+  }
+  nav.active ul {
+    right: 0;
+  }
+
+  #why,
+  .measures__list,
+  .expert,
+  .series__header,
+  .series,
+  .footer {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #why {
+    margin-top: 30%;
+  }
+
+  .hero {
+    height: 60vh;
+  }
+  .hero__grid {
+    grid-template-columns: none;
+  }
+}

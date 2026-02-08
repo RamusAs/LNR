@@ -1,0 +1,192 @@
+h1 {
+  font: italic normal 900 clamp(42px, 3.13vw, 72px) / 72px Avenir Next;
+  margin: 0;
+}
+
+h2 {
+  font: normal normal 900 clamp(29px, 2.14vw, 50px) Mattone;
+}
+h3,
+dt {
+  font: normal normal 900 clamp(16px, 1.15vw, 28px) / 42px Mattone;
+}
+h4 {
+  font: normal normal bold clamp(14px, 0.94vw, 22px) / 25px Avenir Next;
+  margin: 1em 0;
+}
+
+h5 {
+  font: normal normal bold clamp(11px, 0.73vw, 18px) / 19px Avenir Next;
+  margin: 1em 0;
+}
+dt {
+  text-align: center;
+  font: normal normal medium clamp(14px, 0.94vw, 22px) / 25px Avenir Next;
+  letter-spacing: 0px;
+  color: #002956;
+}
+p {
+  margin: 5px 0;
+}
+dl {
+  text-align: center;
+  width: 25%;
+}
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.plan-hero {
+  background: transparent
+    linear-gradient(
+      69deg,
+      var(--color-blue-300) 40%,
+      var(--color-blue-100) 100%
+    )
+    0% 0%;
+  padding: 5%;
+}
+
+.plan-hero__subtitle {
+  font: normal normal 500 clamp(26px, 1.93vw, 44px) / 41px Avenir Next;
+  color: var(--color-white);
+}
+.plan-hero aside {
+  position: absolute;
+  right: 0;
+  top: 5%;
+  height: clamp(300px, 26.04vw, 600px);
+  width: clamp(300px, 26.04vw, 600px);
+  color: var(--color-blue-700);
+  transform: rotate(3deg);
+  box-shadow: 0px 10px 10px #00000027;
+}
+.plan-hero aside strong {
+  font: italic normal 900 clamp(230px, 17.14vw, 395px) / 102px Avenir Next;
+  letter-spacing: -42.77px;
+  color: #016dff;
+}
+.plan-hero aside h2 {
+  margin-top: 15%;
+}
+
+.mesures-list {
+  padding: 0 5%;
+}
+li article {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 3% 10%;
+  gap: 3%;
+}
+article li {
+  list-style: inside;
+}
+
+li:nth-of-type(2n) article {
+  justify-content: flex-start;
+}
+
+article aside {
+  background: #f8f8ed;
+  border-radius: 30px;
+  padding: 1% 3%;
+  width: 60%;
+}
+
+article span {
+  background: var(--color-blue-300);
+  color: var(--color-white);
+  border-radius: 18px;
+  padding: 0.5em 1em;
+  font: normal normal bold clamp(9px, 0.57vw, 14px) / 30px Avenir Next;
+}
+
+article img {
+  height: clamp(56px, 4.17vw, 96px);
+}
+article .grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1em;
+  margin-bottom: 2em;
+}
+article li,
+article p {
+  text-align: left;
+  font: normal normal 500 clamp(11px, 0.73vw, 18px) / 19px Avenir Next;
+  letter-spacing: 0px;
+  color: #002956;
+}
+
+article footer {
+  display: flex;
+  align-items: end;
+  justify-content: end;
+  gap: 12px;
+  text-align: end;
+  font: italic normal 900 clamp(11px, 0.73vw, 18px) / 19px Avenir Next;
+  letter-spacing: 0px;
+  color: var(--color-red);
+  text-transform: uppercase;
+}
+article footer a {
+  padding-bottom: 0.5em;
+  border-bottom: solid 3px var(--color-red);
+}
+.bottom-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mesures-list > ul > li::after {
+  display: block;
+  content: "";
+  height: 1px;
+  width: 100%;
+  background-image: linear-gradient(
+    to right,
+    var(--color-blue-300) 40%,
+    var(--color-white) 0%
+  );
+  background-size: 10px 10px;
+  background-repeat: repeat-x;
+}
+.bottom-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.bottom-section img {
+  width: 100vw;
+}
+
+@media (max-width: 768px) {
+  li article {
+    flex-direction: column;
+    padding: 0;
+    gap: 1em;
+    margin: 5em 1em;
+  }
+  li article *:not(img):not(svg) {
+    width: 100%;
+  }
+  article aside {
+    padding: 5%;
+  }
+  .mesures-list {
+    padding: 0;
+  }
+  .hero__grid {
+    gap: 0;
+  }
+  .plan-hero aside {
+    position: relative;
+    top: 15%;
+  }
+  .plan-hero {
+    background: var(--color-blue-100);
+  }
+}
