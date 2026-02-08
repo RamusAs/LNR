@@ -111,8 +111,7 @@ h1 {
   font-weight: 500;
 }
 h2 {
-  height: 74px;
-  font: italic normal 900 clamp(3rem, 3.125vw, 3.75rem) / 82px Avenir Next;
+  font: italic normal 900 clamp(2rem, 3.125vw, 3.75rem) Avenir Next;
   margin: 0;
 }
 h3 {
@@ -226,7 +225,7 @@ nav,
 }
 .hero__title {
   text-align: left;
-  font: normal normal medium clamp(50px, 3.7vw, 85px) / 70px Avenir Next;
+  font: normal normal 500 clamp(25px, 3.7vw, 85px) Avenir Next;
   letter-spacing: 0px;
   color: var(--color-white);
 }
@@ -240,7 +239,7 @@ nav,
   grid-area: 1 / 8 / 2 / 13;
 }
 .hero__highlight-title {
-  font: normal normal 900 clamp(24px, 1.77vw, 41px) / 41px Avenir Next;
+  font: normal normal 900 clamp(24px, 1.77vw, 41px) Avenir Next;
   font-size: clamp(1.375rem, 1.77vw, 2.125rem);
   font-weight: 900;
 }

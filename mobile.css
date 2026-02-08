@@ -15,7 +15,7 @@
     display: block;
   }
   .header {
-    height: 120px;
+    height: 80px;
   }
   #icons {
     position: relative;
@@ -27,7 +27,7 @@
     z-index: 12;
   }
   #icons img {
-    height: 40px;
+    height: 30px;
   }
   .nav__logo {
     height: fit-content;
@@ -59,7 +59,7 @@
   }
   nav.active .nav__list {
     width: 100%;
-    height: 210lvh;
+    height: 100vh;
     opacity: 1;
   }
   .nav__link {
@@ -91,7 +91,7 @@
 
   .hero__grid {
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
     background: none;
     height: auto;
     padding: 0;
@@ -124,7 +124,7 @@
     opacity: 0.67;
   }
   .hero__highlight {
-    grid-area: 3 / 1 / 5 / 13;
+    grid-area: 2 / 1 / 18 / 13;
     margin: 2em;
   }
   .series__header {
@@ -177,6 +177,13 @@
   }
   .why__step {
     margin: 1em 0;
+  }
+
+  .plan-hero__grid {
+    flex-wrap: wrap;
+  }
+  .plan-hero aside {
+    transform: translateY(22%) rotate(3deg);
   }
 
   @keyframes parallax {
