@@ -7,9 +7,7 @@
 
 @media (max-width: 768px) {
   /* Désactivation du scroll quand le menu est ouvert */
-  body:has(.active) {
-    overflow: hidden;
-  }
+
   .desktop {
     display: none;
   }
@@ -78,6 +76,7 @@
   #why,
   .measures__list,
   .expert,
+  .expert:last-of-type,
   .series__header,
   .series,
   .footer {
@@ -95,5 +94,66 @@
   }
   .hero__grid {
     grid-template-columns: none;
+  }
+
+  .expert,
+  .expert:last-of-type {
+    flex-direction: column-reverse;
+    margin-bottom: 3em;
+    overflow: hidden;
+  }
+  .expert__card {
+    transform: unset;
+  }
+  .expert__text {
+    width: 100%;
+    border-radius: 0;
+    background: transparent;
+    font-size: 18px;
+  }
+  .expert {
+    background-color: var(--color-blue-500);
+    padding: 2%;
+    border-radius: var(--radius-base);
+  }
+  .expert:has(.expert__author-name--blue) {
+    background-color: var(--color-red);
+  }
+
+  .expert__card {
+    border: none;
+    background-color: transparent;
+    padding: 2%;
+  }
+
+  .expert__card dl {
+    max-width: 100%;
+    text-align: center;
+  }
+  .expert__card:has(.expert__author-name) dl strong {
+    color: var(--color-blue-300);
+  }
+  .expert__author-name {
+    font: normal normal 900 clamp(18px, 1.04vw, 24px) Mattone;
+    color: var(--color-white);
+  }
+  .expert__author-name--blue {
+    font: normal normal 900 clamp(18px, 1.04vw, 24px) Mattone;
+    color: var(--color-white);
+  }
+
+  @keyframes parallax {
+    0% {
+      top: 0;
+      left: 80%;
+    }
+    50% {
+      top: -40%;
+      rotate: -10deg;
+    }
+    100% {
+      top: 100%;
+      rotate: 45deg;
+    }
   }
 }
