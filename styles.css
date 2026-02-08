@@ -137,11 +137,6 @@ body {
 }
 
 /* Layout */
-.layout {
-  display: grid;
-  grid-template-rows: auto 1fr auto;
-  min-height: 100vh;
-}
 
 /* Header */
 .header {
@@ -578,11 +573,11 @@ dl {
   display: flex;
 }
 .series__header img {
-  height: clamp(430px, 32.29vw, 750px);
+  height: clamp(260px, 32.29vw, 750px);
 }
 .img-tete {
   margin-top: -15%;
-  height: clamp(450px, 33.85vw, 780px);
+  height: clamp(260px, 33.85vw, 780px);
 }
 .series {
   display: grid;
