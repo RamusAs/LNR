@@ -16,7 +16,7 @@
 
 @font-face {
   font-family: "Avenir Next";
-  src: url("./fonts/avenir-lt-pro-cufonfonts/Avenir-Heavy.ttf")
+  src: url("./fonts/avenir-lt-pro-cufonfonts/Avenir-Black.ttf")
     format("truetype");
   font-weight: 700;
   font-style: normal;
@@ -24,7 +24,7 @@
 
 @font-face {
   font-family: "Avenir Next";
-  src: url("./fonts/avenir-lt-pro-cufonfonts/Avenir-Black.ttf")
+  src: url("./fonts/avenir-lt-pro-cufonfonts/Avenir-Heavy.ttf")
     format("truetype");
   font-weight: 900;
   font-style: normal;
