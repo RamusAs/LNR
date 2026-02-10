@@ -93,6 +93,9 @@
   article .grid {
     display: block;
   }
+  .series {
+    margin-top: 5em;
+  }
   .hero__grid {
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(3, 1fr);
