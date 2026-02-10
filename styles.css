@@ -124,7 +124,7 @@ h4 {
 }
 
 p {
-  font: normal normal 500 clamp(12px, 0.94vw, 22px) Avenir Next;
+  font: normal normal 500 clamp(14px, 0.94vw, 22px) Avenir Next;
 }
 body {
   margin: 0;
@@ -413,6 +413,7 @@ nav.dark-zone .nav__link {
   align-items: center;
   overflow: hidden;
   padding: 0;
+  scroll-margin-top: -50px;
 }
 #plan h2,
 #series h2 {
@@ -564,8 +565,8 @@ dl {
   background: var(--color-blue-300);
   color: var(--color-beige-100);
   border-radius: 62px;
-  padding: clamp(32px, 2.34vw, 54px);
-  font: italic normal 900 clamp(18px, calc(0.5rem + 0.8vw), 30px) Avenir Next;
+  padding: clamp(28px, 2.34vw, 54px);
+  font: italic normal 900 clamp(14px, calc(0.5rem + 0.8vw), 30px) Avenir Next;
   margin: 40px;
   text-align: center;
   cursor: pointer;
@@ -597,6 +598,13 @@ dl {
   grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
   justify-items: center;
+}
+.episode__title {
+  margin-bottom: 0;
+}
+.episode video {
+  background-color: var(--color-white);
+  padding: 0.5em;
 }
 .subtitle {
   font-size: clamp(26px, 1.93vw, 44px);
