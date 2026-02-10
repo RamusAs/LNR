@@ -102,13 +102,12 @@
   .hero__content {
     position: relative;
     grid-area: 1 / 1 / 4 / 13;
-    padding: 1em;
-    margin-bottom: 40%;
+    padding: 0 1em;
     border-radius: var(--radius-base);
     background: url("./assets/gazon-HP.png") center / cover no-repeat;
   }
   .hero__title {
-    margin-bottom: 15%;
+    margin-bottom: 40%;
   }
   .hero__grid::before {
     all: unset;
