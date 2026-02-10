@@ -12,3 +12,20 @@ links.forEach((link) => {
     nav.classList.remove("active");
   });
 });
+
+const darkSections = document.querySelectorAll(".section-dark");
+
+const observer = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        nav.classList.add("dark-zone");
+      } else {
+        nav.classList.remove("dark-zone");
+      }
+    });
+  },
+  { threshold: 0.3 }
+);
+
+darkSections.forEach((section) => observer.observe(section));

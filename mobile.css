@@ -17,6 +17,9 @@
   .header {
     height: 80px;
   }
+  .section {
+    scroll-margin-top: 80px;
+  }
   #icons {
     position: relative;
     display: flex;
@@ -185,6 +188,7 @@
   .plan-hero aside {
     transform: translateY(22%) rotate(3deg);
   }
+  .social {flex-direction: row;}
 
   @keyframes parallax {
     0% {
