@@ -21,8 +21,7 @@ h5 {
 }
 dt {
   text-align: center;
-  font: normal normal 900 clamp(16px, 1.15vw, 28px)
- Mattone;
+  font: normal normal 900 clamp(16px, 1.15vw, 28px) Mattone;
   letter-spacing: 0px;
   color: #002956;
 }
@@ -48,6 +47,11 @@ ul {
     0% 0%;
   padding: 5% 5% 0;
 }
+.plan-hero .hero__highlight {
+  background-color: transparent;
+  box-shadow: none;
+}
+
 .plan-hero__grid {
   display: flex;
 }
@@ -60,27 +64,19 @@ ul {
   color: var(--color-white);
 }
 .plan-hero aside {
-  height: clamp(300px, 26.04vw, 600px);
-  width: clamp(300px, 26.04vw, 600px);
-  color: var(--color-blue-700);
-  transform: translateY(10%) rotate(3deg);
-  box-shadow: 0px 10px 10px #00000027;
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 30px;
-  padding: 0 4% 4%;
+  margin-bottom: -5em;
 }
-.plan-hero aside strong {
-  font: italic normal 900 clamp(150px, 17.14vw, 395px) Avenir Next;
-  /* letter-spacing: -21.77px; */
-  color: #016dff;
-  height: 150px;
-  display: inline-block;
+.plan-hero aside img {
+  height: clamp(300px, 26.04vw, 600px);
+  width: clamp(300px, 26.04vw, 600px);
 }
 
 .mesures-list {
   padding: 0 5%;
+  margin-top: 4em;
 }
 li article {
   display: flex;
@@ -135,7 +131,7 @@ article footer {
   justify-content: end;
   gap: 12px;
   text-align: end;
-  font: italic normal 900 clamp(11px, 0.73vw, 18px) Avenir Next;
+  font: italic normal 900 clamp(10px, 0.73vw, 18px) Avenir Next;
   letter-spacing: 0px;
   color: var(--color-red);
   text-transform: uppercase;

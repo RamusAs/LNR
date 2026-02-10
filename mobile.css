@@ -6,8 +6,6 @@
 }
 
 @media (max-width: 768px) {
-  /* Désactivation du scroll quand le menu est ouvert */
-
   .desktop {
     display: none;
   }
@@ -91,7 +89,9 @@
     flex-direction: column;
     align-items: center;
   }
-
+  article .grid {
+    display: block;
+  }
   .hero__grid {
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(3, 1fr);
@@ -184,11 +184,17 @@
 
   .plan-hero__grid {
     flex-wrap: wrap;
+    justify-content: center;
   }
   .plan-hero aside {
-    transform: translateY(22%) rotate(3deg);
+    transform: none;
   }
-  .social {flex-direction: row;}
+  .footer {
+    gap: 2em;
+  }
+  .footer > .social {
+    flex-direction: row;
+  }
 
   @keyframes parallax {
     0% {
