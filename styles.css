@@ -598,9 +598,18 @@ dl {
 .episode__title {
   margin-bottom: 0;
 }
+.episode {
+  width: 350px;
+}
 .episode video {
   background-color: var(--color-white);
   padding: 0.5em;
+  width: 100%;
+  display: block;
+}
+.episode__subtitle {
+  width: 100%;
+  box-sizing: border-box;
 }
 .subtitle {
   font-size: clamp(26px, 1.93vw, 44px);
