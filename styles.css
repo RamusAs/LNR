@@ -564,6 +564,7 @@ dl {
   padding: clamp(28px, 2.34vw, 54px);
   font: italic normal 900 clamp(14px, calc(0.5rem + 0.8vw), 30px) Avenir Next;
   margin: 40px;
+  width: max-content;
   text-align: center;
   cursor: pointer;
 }
