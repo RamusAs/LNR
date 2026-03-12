@@ -558,12 +558,13 @@ dl {
   transform: rotate(1.5deg);
 }
 .button {
+  display: flex;
   background: var(--color-blue-300);
   color: var(--color-beige-100);
   border-radius: 62px;
   padding: clamp(28px, 2.34vw, 54px);
   font: italic normal 900 clamp(14px, calc(0.5rem + 0.8vw), 30px) Avenir Next;
-  margin: 40px;
+  margin: 40px auto;
   width: max-content;
   text-align: center;
   cursor: pointer;
@@ -590,7 +591,9 @@ dl {
   margin-top: -15%;
   height: clamp(260px, 33.85vw, 780px);
 }
+
 .series {
+  margin: 2rem 0;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
